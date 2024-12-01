@@ -1,0 +1,10 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.active {
+    background-color: #0874F20D;
+    color: #0874F2;
+}
+.active h2 {
+    color: #0874F2;
+}

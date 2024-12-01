@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="font-inter">
+
+    <main class="flex justify-center items-center h-screen">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-3">
+                    <!-- Content -->
+                    <div class="hero">
+                        <div class="hero-content flex flex-col">
+                            <div>
+                                <img src="./images/payoo.png" alt="payoo" class="w-2/5 mx-auto">
+                            </div>
+                            <div class="card w-full">
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text font-bold">Phone Number</span>
+                                        </label>
+                                        <input id="number" type="text" placeholder="Enter your number" class="input input-bordered text-sm" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text font-bold">4 Digit Pin</span>
+                                        </label>
+                                        <input id="pass" type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered text-sm"
+                                            required />
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <button id="loginBtn" class="btn bg-[#0874F2] rounded-full font-bold text-white">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        inter: ["Inter", "serif"],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom Js -->
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
