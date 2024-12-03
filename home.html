@@ -21,6 +21,7 @@
         <div class="artboard bg-slate-50 py-7 phone-4">
           <!--Content Container -->
           <div>
+
             <!-- Balance -->
             <div class="flex justify-between pt-3 px-3">
               <!-- Left -->
@@ -28,7 +29,7 @@
                 <img src="./images/Group.png" alt="group">
                 <div>
                   <h2 class="font-extrabold text-2xl text-[#080808E6]">$<span id="balance">400</span></>
-                  <p class="text-[#08080880] text-sm">Available Balance</p>
+                    <p class="text-[#08080880] text-sm">Available Balance</p>
                 </div>
               </div>
 
@@ -94,72 +95,11 @@
 
             <!-- Dynamic Part -->
             <div class="px-3">
-              <div id="history">
+              <!-- Content -->
+              <div id="historyDetail" class="space-y-3">
 
-                <!-- Content -->
-                <div id="historyDetail" class="space-y-3">
 
-                  <!-- Title Part -->
-                  <div class="flex justify-between mb-3">
-                    <p class="font-semibold text-lg text-[#080808E6]">Latest Payment</p>
-                    <a href="#" class="text-sm text-[#08080880]">Last Payment</a>
-                  </div>
-                  <!-- Item -->
-                  <div class="rounded-lg shadow-xl p-4 flex items-center justify-between">
-                    <!-- Left -->
-                    <div class="flex items-center gap-2">
-                      <div>
-                        <img src="./images/icons/wallet 1.png" alt="money">
-                      </div>
-                      <div>
-                        <h4 class="font-semibold text-base text-[#080808B3]">Electricity Bill</h4>
-                        <p class="font-normal text-[12px] text-[#080808B3]">Today 01:44 AM</p>
-                      </div>
-                    </div>
-                    <!-- Right -->
-                    <div>
-                      <a href="#"><i class="fa-solid fa-ellipsis-vertical text-[#080808B3]"></i></a>
-                    </div>
-                  </div>
-
-                  <!-- Item -->
-                  <div class="rounded-lg shadow-xl p-4 flex items-center justify-between">
-                    <!-- Left -->
-                    <div class="flex items-center gap-2">
-                      <div>
-                        <img src="./images/icons/wallet 1.png" alt="money">
-                      </div>
-                      <div>
-                        <h4 class="font-semibold text-base text-[#080808B3]">Bank Deposit</h4>
-                        <p class="font-normal text-[12px] text-[#080808B3]">Today 05:10 PM</p>
-                      </div>
-                    </div>
-                    <!-- Right -->
-                    <div>
-                      <a href="#"><i class="fa-solid fa-ellipsis-vertical text-[#080808B3]"></i></a>
-                    </div>
-                  </div>
-
-                  <!-- Item -->
-                  <div class="rounded-lg shadow-xl p-4 flex items-center justify-between">
-                    <!-- Left -->
-                    <div class="flex items-center gap-2">
-                      <div>
-                        <img src="./images/icons/wallet 1.png" alt="money">
-                      </div>
-                      <div>
-                        <h4 class="font-semibold text-base text-[#080808B3]">Mobile Recharge</h4>
-                        <p class="font-normal text-[12px] text-[#080808B3]">Today 12:04 AM</p>
-                      </div>
-                    </div>
-                    <!-- Right -->
-                    <div>
-                      <a href="#"><i class="fa-solid fa-ellipsis-vertical text-[#080808B3]"></i></a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- ------ Add ------ -->
+                <!-- AddMoney -->
                 <div id="addSection" class="hidden">
                   <!-- Title Part -->
                   <div class="flex justify-between mb-3">
@@ -173,8 +113,8 @@
                             <label class="label">
                               <span class="label-text font-bold">Bank Account Number</span>
                             </label>
-                            <input id="bankAC" type="number" placeholder="Enter 11 digit account number" class="input input-bordered text-sm"
-                              required />
+                            <input id="bankAC" type="number" placeholder="Enter 11 digit account number"
+                              class="input input-bordered text-sm" required />
                           </div>
                           <div class="form-control">
                             <label class="label">
@@ -191,8 +131,8 @@
                               class="input input-bordered text-sm" required />
                           </div>
                           <div class="form-control mt-6">
-                            <button id="addBtn"
-                              class="btn bg-[#0874F2] rounded-full font-bold text-white">Add Money</button>
+                            <button id="addBtn" class="btn bg-[#0874F2] rounded-full font-bold text-white">Add
+                              Money</button>
                           </div>
                         </form>
                       </div>
@@ -200,7 +140,7 @@
                   </div>
                 </div>
 
-                <!-- ------ Out ------ -->
+                <!-- CashOut -->
                 <div id="outSection" class="hidden">
                   <!-- Title Part -->
                   <div class="flex justify-between mb-3">
@@ -214,8 +154,8 @@
                             <label class="label">
                               <span class="label-text font-bold">Agent Number</span>
                             </label>
-                            <input id="agentNumber" type="number" placeholder="Enter 11 digit number" class="input input-bordered text-sm"
-                              required />
+                            <input id="agentNumber" type="number" placeholder="Enter 11 digit number"
+                              class="input input-bordered text-sm" required />
                           </div>
                           <div class="form-control">
                             <label class="label">
@@ -232,10 +172,184 @@
                               class="input input-bordered text-sm" required />
                           </div>
                           <div class="form-control mt-6">
-                            <button id="outBtn"
-                              class="btn bg-[#0874F2] rounded-full font-bold text-white">Add Money</button>
+                            <button id="outBtn" class="btn bg-[#0874F2] rounded-full font-bold text-white">Add
+                              Money</button>
                           </div>
                         </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Money Transfer -->
+                <div id="addSection" class="hidden">
+                  <!-- Title Part -->
+                  <div class="flex justify-between mb-3">
+                    <p class="font-semibold text-lg text-[#080808E6]">Transfer Money</p>
+                  </div>
+                  <div class="px-5">
+                    <div class="flex flex-col">
+                      <div class="card w-full">
+                        <form class="">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-bold">User Account Number</span>
+                            </label>
+                            <input id="acNumber" type="number" placeholder="Enter 11 digit account number"
+                              class="input input-bordered text-sm" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-bold">Amount to Add</span>
+                            </label>
+                            <input id="tAmount" type="number" placeholder="Add Amount to withdraw"
+                              class="input input-bordered text-sm" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-bold">Pin Number</span>
+                            </label>
+                            <input id="tPass" type="password" placeholder="Enter 4 digit pin number"
+                              class="input input-bordered text-sm" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="sendMoney" class="btn bg-[#0874F2] rounded-full font-bold text-white">Send
+                              Money</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bonus -->
+                <div id="addSection" class="hidden">
+                  <!-- Title Part -->
+                  <div class="flex justify-between mb-3">
+                    <p class="font-semibold text-lg text-[#080808E6]">Transfer Money</p>
+                  </div>
+                  <div class="px-5">
+                    <div class="flex flex-col">
+                      <div class="card w-full">
+                        <form class="">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-bold">Enter Bonus Coupon</span>
+                            </label>
+                            <input id="bonus" type="number" placeholder="Enter your coupon"
+                              class="input input-bordered text-sm" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="addBonus" class="btn bg-[#0874F2] rounded-full font-bold text-white">Get
+                              Bonus</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pay Bil -->
+                <div id="addSection" class="hidden">
+                  <!-- Title Part -->
+                  <div class="flex justify-between mb-3">
+                    <p class="font-semibold text-lg text-[#080808E6]">Transfer Money</p>
+                  </div>
+                  <div class="px-5">
+                    <div class="flex flex-col">
+                      <div class="card w-full">
+                        <form class="">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-bold">Biller Account Number</span>
+                            </label>
+                            <input id="billerAC" type="number" placeholder="Enter account number"
+                              class="input input-bordered text-sm" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-bold">Amount to Pay</span>
+                            </label>
+                            <input id="bAmmount" type="number" placeholder="Add Amount to Pay"
+                              class="input input-bordered text-sm" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-bold">Pin Number</span>
+                            </label>
+                            <input id="bPass" type="password" placeholder="Enter 4 digit pin number"
+                              class="input input-bordered text-sm" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="pay" class="btn bg-[#0874F2] rounded-full font-bold text-white">Pay
+                              Now</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Transaction -->
+                <div id="transaction" class="">
+                  <!-- Title Part -->
+                  <div class="flex justify-between mb-3">
+                    <p class="font-semibold text-lg text-[#080808E6]">Latest Payment</p>
+                    <a href="#" class="text-sm text-[#08080880]">Last Payment</a>
+                  </div>
+                  <!-- Dynamic -->
+                  <div id="transactionDaynamic">
+                    <!-- Item -->
+                    <div class="rounded-lg shadow-xl p-4 flex items-center justify-between">
+                      <!-- Left -->
+                      <div class="flex items-center gap-2">
+                        <div>
+                          <img src="./images/icons/wallet 1.png" alt="money">
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-base text-[#080808B3]">Electricity Bill</h4>
+                          <p class="font-normal text-[12px] text-[#080808B3]">Today 01:44 AM</p>
+                        </div>
+                      </div>
+                      <!-- Right -->
+                      <div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical text-[#080808B3]"></i></a>
+                      </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="rounded-lg shadow-xl p-4 flex items-center justify-between">
+                      <!-- Left -->
+                      <div class="flex items-center gap-2">
+                        <div>
+                          <img src="./images/icons/wallet 1.png" alt="money">
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-base text-[#080808B3]">Bank Deposit</h4>
+                          <p class="font-normal text-[12px] text-[#080808B3]">Today 05:10 PM</p>
+                        </div>
+                      </div>
+                      <!-- Right -->
+                      <div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical text-[#080808B3]"></i></a>
+                      </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="rounded-lg shadow-xl p-4 flex items-center justify-between">
+                      <!-- Left -->
+                      <div class="flex items-center gap-2">
+                        <div>
+                          <img src="./images/icons/wallet 1.png" alt="money">
+                        </div>
+                        <div>
+                          <h4 class="font-semibold text-base text-[#080808B3]">Mobile Recharge</h4>
+                          <p class="font-normal text-[12px] text-[#080808B3]">Today 12:04 AM</p>
+                        </div>
+                      </div>
+                      <!-- Right -->
+                      <div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical text-[#080808B3]"></i></a>
                       </div>
                     </div>
                   </div>
@@ -272,7 +386,9 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/8fd2185bf3.js" crossorigin="anonymous"></script>
   <!-- Custom Js -->
+  <script src="./js/utilities.js"></script>
   <script src="./js/home.js"></script>
+
 </body>
 
 </html>
