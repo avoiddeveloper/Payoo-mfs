@@ -9,9 +9,9 @@ loginBtn.addEventListener("click", function (event) {
     // Stop Default Behavior
     event.preventDefault();
 
-    if(number === "01870038309" && pass === "46790"){
+    if (number === "01870038309" && pass === "46790") {
         window.location.href = "./home.html"
-    }else {
+    } else {
         alert("Wrong Number Or Password");
     }
 });
